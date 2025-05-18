@@ -291,7 +291,8 @@ p {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transform: translateY(100%);
+  transition: all 1.5s ease;
 }
 .instagram.module-wrapper .swiper-slide .overlay a {
   border-bottom: 1px solid #ffffff;
@@ -310,6 +311,7 @@ p {
 .instagram.module-wrapper .swiper-slide.swiper-slide-active .overlay {
   opacity: 1;
   pointer-events: auto;
+  transform: translateY(0%);
 }
 
 .keyfacts .facts {
