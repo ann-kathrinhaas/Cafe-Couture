@@ -133,7 +133,7 @@ p {
   width: auto;
 }
 .module-wrapper.header-img {
-  background-image: url("../../assets/images/header.webp");
+  background-image: url("../assets/images/header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
