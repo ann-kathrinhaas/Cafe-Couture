@@ -1,0 +1,17 @@
+@use '../base/colors' as *;
+
+.image-with-text {
+    .module {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &.testimonial {
+        .line {
+            border-bottom: 1px solid $black;
+            width: 4rem;
+            margin: 1rem auto 0 auto;
+        }
+    }
+}

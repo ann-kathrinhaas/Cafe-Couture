@@ -1,0 +1,54 @@
+@use 'colors' as *;
+@use 'fonts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+body {
+    .module-wrapper {
+        margin: 8rem 0;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        &.white-bg {
+            background: $white-bg;
+        }
+
+        &.black-bg {
+            background: $black-bg;
+        }
+
+        &.beige-bg{
+            background: $beige-bg;
+            padding: 4rem 0;
+        }
+
+        .module {
+            max-width: 390px;
+            margin: 0 auto;
+            padding: 0 1rem;
+
+            .image-wrapper {
+                width: 100vw;
+                height: 35vh;
+                overflow: hidden;
+                margin-left: -1rem;
+
+                img {
+                    &.full-width-on-mobile {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+           }
+        }
+    }
+}

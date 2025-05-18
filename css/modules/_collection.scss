@@ -1,0 +1,18 @@
+.collection {
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        align-items: center;
+        padding-top: 4rem;
+
+        .product-img {
+            width: 70vw;
+            margin: 0 3.5rem 1rem 0;
+        }
+
+        .button {
+            margin-top: 2rem;
+        }
+    }
+}

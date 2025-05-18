@@ -1,1 +1,247 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "ABChanelCorpo";
+  src: url("../assets/fonts/ABChanelCorpo-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaCustom";
+  src: url("../assets/fonts/Helvetica-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ABChanelCorpo", sans-serif;
+}
+
+body .module-wrapper {
+  margin: 8rem 0;
+}
+body .module-wrapper:last-of-type {
+  margin: 0;
+}
+body .module-wrapper.white-bg {
+  background: #ffffff;
+}
+body .module-wrapper.black-bg {
+  background: #000000;
+}
+body .module-wrapper.beige-bg {
+  background: #F9EEE2;
+  padding: 4rem 0;
+}
+body .module-wrapper .module {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+body .module-wrapper .module .image-wrapper {
+  width: 100vw;
+  height: 35vh;
+  overflow: hidden;
+  margin-left: -1rem;
+}
+body .module-wrapper .module .image-wrapper img.full-width-on-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1, h2, h3, h4, p {
+  font-family: "ABChanelCorpo", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.35em;
+  margin: 1rem 0;
+  letter-spacing: 0.05em;
+}
+
+.white-font {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.footer p {
+  font-family: "HelveticaCustom", sans-serif;
+  font-weight: 300;
+}
+.footer p.subheadline {
+  font-family: "ABChanelCorpo", sans-serif;
+}
+
+span {
+  font-family: "HelveticaCustom", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+.preheadline {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.button {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  font-size: 0.875rem;
+}
+.button.btn-primary {
+  background: #000000;
+  color: #ffffff;
+}
+.button.btn-secondary {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.module-wrapper.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.module-wrapper.logo-wrapper .module .logo {
+  height: 2rem;
+  width: auto;
+}
+.module-wrapper.header-img {
+  background-image: url("/assets/images/header.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+}
+.module-wrapper.header-img p {
+  margin-bottom: 2rem;
+}
+
+.footer.module-wrapper .module {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+.footer.module-wrapper .module .flex.row {
+  column-gap: 1rem;
+  align-items: center;
+}
+.footer.module-wrapper .module .icon-ig {
+  width: 2rem;
+  height: auto;
+}
+.footer.module-wrapper .module h2 {
+  margin: 0 0 1rem 0;
+}
+.footer.module-wrapper .module h3 {
+  margin-bottom: 1rem;
+}
+.footer.module-wrapper .module p {
+  margin: 0;
+}
+.footer.module-wrapper .module .footer-links p:nth-of-type(1), .footer.module-wrapper .module .footer-links p:nth-of-type(2) {
+  margin-bottom: 0.5rem;
+}
+.footer.module-wrapper .module .instagram-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.cafe-details .cafe-img {
+  border-bottom: 2px solid #ffffff;
+}
+.cafe-details .preheadline {
+  padding-top: 4rem;
+}
+.cafe-details .details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+.cafe-details .details .detail {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  border: 2px solid #ffffff;
+  width: 18.75rem;
+  padding: 0.4rem 1rem;
+}
+
+.collection .products {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+  padding-top: 4rem;
+}
+.collection .products .product-img {
+  width: 70vw;
+  margin: 0 3.5rem 1rem 0;
+}
+.collection .products .button {
+  margin-top: 2rem;
+}
+
+.image-with-text .module {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.image-with-text.testimonial .line {
+  border-bottom: 1px solid #000000;
+  width: 4rem;
+  margin: 1rem auto 0 auto;
+}
+
+.instagram.module-wrapper {
+  margin-bottom: 0;
+}
+
+.keyfacts .facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 4rem 0 4rem;
+}
+.keyfacts .facts .fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}

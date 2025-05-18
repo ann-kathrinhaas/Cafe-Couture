@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'ABChanelCorpo';
+  src: url('../assets/fonts/ABChanelCorpo-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('../assets/fonts/Helvetica-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$font-primary: 'ABChanelCorpo', sans-serif;
+$font-secondary: 'HelveticaCustom', sans-serif;

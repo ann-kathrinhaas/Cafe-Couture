@@ -1,0 +1,29 @@
+.module-wrapper {
+    &.logo-wrapper {
+      display: flex;
+      justify-content: center;  
+      margin: 2rem 0;
+
+       .module {
+        .logo {
+            height: 2rem;
+            width: auto;
+        }
+       }
+    }
+
+    &.header-img {
+        background-image: url("/assets/images/header.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40vh;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 0;
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}

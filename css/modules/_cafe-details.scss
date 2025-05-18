@@ -1,0 +1,28 @@
+@use '../base/colors' as *;
+
+.cafe-details {
+    .cafe-img {
+        border-bottom: 2px solid $white;
+    }
+
+    .preheadline {
+        padding-top: 4rem;
+    }
+
+   .details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    padding: 4rem 0;
+
+    .detail {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        border: 2px solid $white;
+        width: 18.75rem;
+        padding: 0.4rem 1rem;
+    }
+   } 
+}

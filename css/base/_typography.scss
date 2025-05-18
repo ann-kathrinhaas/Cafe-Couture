@@ -1,0 +1,62 @@
+@use 'colors' as *;
+@use 'fonts' as *;
+
+// Mobile
+h1, h2, h3, h4, p {
+    font-family: $font-primary;
+    text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.35em;
+  margin: 1rem 0;
+  letter-spacing: 0.05em;
+}
+
+.white-font {
+    color: $white; 
+    text-shadow: $text-shadow;
+}
+
+.footer {
+    p {
+        font-family: $font-secondary;
+        font-weight: 300;
+
+        &.subheadline {
+            font-family: $font-primary;
+        }
+    }
+}
+
+span {
+    font-family: $font-secondary;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+.preheadline {
+   font-size: 0.75rem; 
+   margin: 0;
+}

@@ -1,0 +1,20 @@
+@use '../base/colors' as *;
+@use '../base/fonts' as *;
+
+.button {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+
+    &.btn-primary {
+        background: $black;
+        color: $white;
+    }
+
+    &.btn-secondary {
+        color: $black;
+        border: 1px solid $black;
+    }
+}
