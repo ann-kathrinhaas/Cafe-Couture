@@ -1,0 +1,54 @@
+@use "../base/colors" as *;
+
+.swiper {
+  width: 100vw;
+  height: 14rem;
+  margin: auto;
+  padding-top: 4rem !important;
+  overflow: visible !important;
+  margin-bottom: 4rem;
+
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 12rem;
+
+      img {
+        width: 10rem;
+        height: 10rem;
+        transition: transform 0.4s ease; 
+      }
+
+      &.swiper-slide-active {
+        img {
+          width: 12rem;
+          height: 12rem;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    padding-top: 1rem;
+
+    .swiper-pagination-bullet {
+      border-radius: 0;
+      width: 3rem;
+      height: 4px;
+      background-color: rgba($black, 0.4);
+
+      &.swiper-pagination-bullet-active {
+        background-color: $black;
+      }
+    }
+  }
+}

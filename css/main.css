@@ -123,6 +123,50 @@ p {
   border: 1px solid #000000;
 }
 
+.swiper {
+  width: 100vw;
+  height: 14rem;
+  margin: auto;
+  padding-top: 4rem !important;
+  overflow: visible !important;
+  margin-bottom: 4rem;
+}
+.swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 10rem;
+  height: 10rem;
+  transition: transform 0.4s ease;
+}
+.swiper .swiper-wrapper .swiper-slide.swiper-slide-active img {
+  width: 12rem;
+  height: 12rem;
+}
+.swiper .swiper-pagination {
+  position: relative;
+  padding-top: 1rem;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 3rem;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+
 .module-wrapper.logo-wrapper {
   display: flex;
   justify-content: center;
