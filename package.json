@@ -4,7 +4,8 @@
   "description": "Responsive Webdesign SoSe 25",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass css/main.scss css/main.css --no-source-map",
+    "watch": "sass --watch css/main.scss css/main.css --no-source-map"
   },
   "keywords": [],
   "author": "",
