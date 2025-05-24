@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Couture</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/slider.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -118,7 +119,6 @@
         </div>
     </div>
 
-
     <div class="module-wrapper white-bg image-with-text testimonial">
         <div class="module">
             <div class="image-wrapper">
@@ -142,7 +142,7 @@
         </div>
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-real="0">
                     <img src="assets/images/kaffeebohnen_ig.webp">
                     <div class="overlay">
                         <a>Auf Instagram ansehen</a>
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-real="1">
                     <img src="assets/images/cafe_ig.webp">
                     <div class="overlay">
                         <a>Auf Instagram ansehen</a>
@@ -162,7 +162,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-real="2">
+                    <img src="assets/images/kaffeebecher_ig.webp">
+                    <div class="overlay">
+                        <a>Auf Instagram ansehen</a>
+                        <div class="instagram-icons">
+                            <img src="assets/icons/ic_herz.svg">
+                            <img src="assets/icons/ic_sprechblase.svg">
+                        </div>
+                    </div>
+                </div>
+                <!-- Klone -->
+                <div class="swiper-slide" data-real="0">
+                    <img src="assets/images/kaffeebohnen_ig.webp">
+                    <div class="overlay">
+                        <a>Auf Instagram ansehen</a>
+                        <div class="instagram-icons">
+                            <img src="assets/icons/ic_herz.svg">
+                            <img src="assets/icons/ic_sprechblase.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-real="1">
+                    <img src="assets/images/cafe_ig.webp">
+                    <div class="overlay">
+                        <a>Auf Instagram ansehen</a>
+                        <div class="instagram-icons">
+                            <img src="assets/icons/ic_herz.svg">
+                            <img src="assets/icons/ic_sprechblase.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-real="2">
                     <img src="assets/images/kaffeebecher_ig.webp">
                     <div class="overlay">
                         <a>Auf Instagram ansehen</a>
@@ -173,8 +204,13 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination">
+                <span class="swiper-pagination-bullet" data-index="0"></span>
+                <span class="swiper-pagination-bullet" data-index="1"></span>
+                <span class="swiper-pagination-bullet" data-index="2"></span>
+            </div>
         </div>
+    </div>
     </div>
 
     <div class="module-wrapper footer black-bg white-font">
@@ -197,7 +233,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
