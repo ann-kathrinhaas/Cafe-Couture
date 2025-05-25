@@ -38,6 +38,7 @@ body {
     .module {
         margin: 0 auto;
         padding: 0 1rem;
+        max-width: $page-max-width;
 
         .image-wrapper {
             width: 100vw;
@@ -51,6 +52,10 @@ body {
                     height: 100%;
                     object-fit: cover;
                     display: block;
+
+                    &.cafe-img {
+                        width: 100vw;
+                    }
                 }
             }
         }
@@ -90,6 +95,19 @@ body {
                     width: 50%;
                     height: 100%;
                     place-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $t-landscape) {
+    .module-wrapper {
+        .module {
+            .image-wrapper {
+                &.cafe {
+                    max-height: 140vh;
+                    min-height: 70rem;
                 }
             }
         }

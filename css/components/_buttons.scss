@@ -51,3 +51,11 @@
         font-size: 0.75rem;
     }
 }
+
+@media (min-width: $t-landscape) {
+   .button {
+        &.btn-tertiary {
+            font-size: 0.625rem;
+        }
+    } 
+}

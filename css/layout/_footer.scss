@@ -30,7 +30,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: row;
-                gap: 0.5rem;
+                gap: 1rem;
             }
 
             .footer-links {
@@ -39,6 +39,20 @@
                     &:nth-of-type(2) {
                         margin-bottom: 0.5rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $t-landscape) {
+    .footer {
+        &.module-wrapper {
+            .module {
+                .footer-links {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3rem;
                 }
             }
         }

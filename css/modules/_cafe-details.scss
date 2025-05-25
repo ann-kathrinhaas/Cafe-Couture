@@ -4,6 +4,7 @@
 .cafe-details {
     .cafe-img {
         border-bottom: 2px solid $white;
+        width: 100vw;
     }
 
     .preheadline {
@@ -13,7 +14,7 @@
     .details {
         display: flex;
         flex-direction: column;
-        row-gap: 2rem;
+        gap: 2rem;
         align-items: center;
         padding: 4rem 0;
 
@@ -28,10 +29,12 @@
     }
 }
 
-@media (min-width: $t-portrait) {
+@media (min-width: $t-landscape) {
     .cafe-details {
-        .cafe-img {
-            height: 70vh;
+        .details {
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
         }
     }
 }

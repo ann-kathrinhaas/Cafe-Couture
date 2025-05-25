@@ -49,3 +49,12 @@
         }
     }
 }
+
+@media (min-width: $t-landscape) {
+    .module-wrapper {
+        &.header-img {
+            max-height: 90vh;
+            min-height: 45rem;
+        }
+    }
+}

@@ -17,6 +17,23 @@
     }
 }
 
+.keyfacts {
+  .facts {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 4rem;
+
+    .fact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; // für Inhalt oben/unten
+      padding: 2rem;
+    }
+  }
+}
+
 @media (min-width: $p-portrait) and (max-width: $t-portrait) {
     .keyfacts {
         .facts {
@@ -35,6 +52,18 @@
 
             .fact {
                 padding: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $d-small) {
+    .keyfacts {
+        .facts {
+            gap: 4rem;
+
+            .fact {
+                padding: 0 4rem;
             }
         }
     }

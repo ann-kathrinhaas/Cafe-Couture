@@ -39,3 +39,19 @@
         }
     }
 }
+
+@media (min-width: $t-landscape) {
+    .image-with-text {
+        .module {
+            height: 22rem;
+        }
+    }
+}
+
+@media (min-width: $d-small) {
+    .image-with-text {
+        .module {
+            height: 26rem;
+        }
+    }
+}

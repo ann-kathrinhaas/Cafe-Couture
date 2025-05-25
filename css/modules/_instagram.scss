@@ -93,3 +93,26 @@
     }
   }
 }
+
+@media (min-width: $t-landscape) {
+  .instagram {
+    &.module-wrapper {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 12rem;
+          height: 12rem;
+
+          .ig-img {
+            width: 12rem;
+            height: 12rem;
+          }
+
+          .overlay {
+            width: 12rem;
+            height: 6rem;
+          }
+        }
+      }
+    }
+  }
+}
