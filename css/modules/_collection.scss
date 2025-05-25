@@ -9,7 +9,9 @@
         padding-top: 4rem;
 
         .product-img {
-            height: 50vh;
+            max-height: 50vh;
+            min-height: 20rem;
+            height: auto;
             margin: 0 3.5rem 1rem 0;
         }
     }
@@ -23,7 +25,8 @@
             justify-content: center;
 
             .product-img {
-                height: 35vh;
+                max-height: 20vh;
+                min-height: 15rem;
             }
         }
     }

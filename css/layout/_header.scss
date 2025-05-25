@@ -19,7 +19,9 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 40vh;
+        height: auto;
+        max-height: 40vh;
+        min-height: 20rem;
         display: flex;
         align-items: flex-end;
         margin-top: 0;
@@ -33,7 +35,8 @@
 @media (min-width: $p-portrait) and (max-width: $t-portrait) {
     .module-wrapper {
         &.header-img {
-            height: 80vh;
+            max-height: 60vh;
+            min-height: 25rem;
         }
     }
 }
@@ -41,7 +44,8 @@
 @media (min-width: $t-portrait) and (max-width: $t-landscape) {
     .module-wrapper {
         &.header-img {
-            height: 100vh;
+            max-height: 80vh;
+            min-height: 30rem;
         }
     }
 }

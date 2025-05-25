@@ -79,7 +79,8 @@ body {
                 margin-left: 0;
 
                 &.cafe {
-                    height: 120vh;
+                    max-height: 100vh;
+                    min-height: 50rem;
                     margin-left: -4rem;
                 }
             }
