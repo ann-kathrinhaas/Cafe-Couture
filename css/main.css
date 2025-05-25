@@ -17,42 +17,76 @@
   font-family: "ABChanelCorpo", sans-serif;
 }
 
-body .module-wrapper {
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.module-wrapper {
   margin: 8rem 0;
 }
-body .module-wrapper:last-of-type {
+.module-wrapper:last-of-type {
   margin: 0;
 }
-body .module-wrapper.white-bg {
+.module-wrapper.white-bg {
   background: #ffffff;
 }
-body .module-wrapper.black-bg {
+.module-wrapper.black-bg {
   background: #000000;
 }
-body .module-wrapper.beige-bg {
+.module-wrapper.beige-bg {
   background: #F9EEE2;
   padding: 4rem 0;
 }
-body .module-wrapper .module {
-  max-width: 390px;
+.module-wrapper .module {
   margin: 0 auto;
   padding: 0 1rem;
 }
-body .module-wrapper .module .image-wrapper {
+.module-wrapper .module .image-wrapper {
   width: 100vw;
-  height: 35vh;
+  height: 50vh;
   overflow: hidden;
   margin-left: -1rem;
 }
-body .module-wrapper .module .image-wrapper img.full-width-on-mobile {
+.module-wrapper .module .image-wrapper img.full-width-on-mobile {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 
-h1, h2, h3, h4, p {
+@media (min-width: 480px) and (max-width: 768px) {
+  .module-wrapper .module {
+    padding: 0 6rem;
+  }
+  .module-wrapper .module .image-wrapper {
+    height: 80vh;
+    margin-left: -6rem;
+  }
+}
+@media (min-width: 768px) {
+  .module-wrapper .module {
+    padding: 0 4rem;
+  }
+  .module-wrapper .module .image-wrapper {
+    margin-left: 0;
+  }
+  .module-wrapper .module .image-wrapper.cafe {
+    height: 120vh;
+    margin-left: -4rem;
+  }
+  .module-wrapper .module div.w-50-desktop {
+    width: 50%;
+    height: 100%;
+    place-content: center;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+p {
   font-family: "ABChanelCorpo", sans-serif;
   text-align: center;
 }
@@ -110,12 +144,14 @@ p {
 
 .button {
   text-align: center;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 1rem 3rem;
   font-size: 0.875rem;
   margin-top: 2rem;
+}
+.button:hover {
+  cursor: pointer;
 }
 .button.btn-primary {
   background: #000000;
@@ -125,7 +161,28 @@ p {
   color: #000000;
   border: 1px solid #000000;
 }
+.button.btn-tertiary {
+  font-size: 0.625rem;
+  margin-top: 0;
+  padding: 0;
+  border-bottom: 1px solid #ffffff;
+  transition: border-bottom 0.2s ease-out;
+}
+.button.btn-tertiary:hover {
+  border-bottom: 1px solid transparent;
+}
 
+@media (min-width: 600px) {
+  .button.btn-tertiary {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .button {
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+  }
+}
 .swiper {
   width: 100vw;
   height: 14rem;
@@ -170,6 +227,30 @@ p {
   background-color: #000000;
 }
 
+@media (min-width: 600px) {
+  .swiper {
+    overflow: visible !important;
+  }
+  .swiper .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    transform: none !important;
+  }
+  .swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: auto !important;
+    transform: none !important;
+  }
+  .swiper .swiper-wrapper .swiper-slide.clone {
+    display: none;
+  }
+  .swiper .swiper-pagination {
+    display: none;
+  }
+}
 .module-wrapper.logo-wrapper {
   display: flex;
   justify-content: center;
@@ -193,17 +274,22 @@ p {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .module-wrapper.header-img {
+    height: 80vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .module-wrapper.header-img {
+    height: 100vh;
+  }
+}
 .footer.module-wrapper .module {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
   padding: 4rem 1rem;
-}
-.footer.module-wrapper .module .flex.row {
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  align-items: center;
 }
 .footer.module-wrapper .module .icon-ig {
   width: 2rem;
@@ -218,14 +304,14 @@ p {
 .footer.module-wrapper .module p {
   margin: 0;
 }
-.footer.module-wrapper .module .footer-links p:nth-of-type(1), .footer.module-wrapper .module .footer-links p:nth-of-type(2) {
-  margin-bottom: 0.5rem;
-}
 .footer.module-wrapper .module .instagram-link {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 0.5rem;
+}
+.footer.module-wrapper .module .footer-links p:nth-of-type(1), .footer.module-wrapper .module .footer-links p:nth-of-type(2) {
+  margin-bottom: 0.5rem;
 }
 
 .cafe-details .cafe-img {
@@ -245,11 +331,16 @@ p {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   width: 18.75rem;
   padding: 0.4rem 1rem;
 }
 
+@media (min-width: 768px) {
+  .cafe-details .cafe-img {
+    height: 70vh;
+  }
+}
 .collection .products {
   display: flex;
   flex-direction: column;
@@ -258,10 +349,20 @@ p {
   padding-top: 4rem;
 }
 .collection .products .product-img {
-  width: 70vw;
+  height: 50vh;
   margin: 0 3.5rem 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .collection .products {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .collection .products .product-img {
+    height: 35vh;
+  }
+}
 .image-with-text .module {
   display: flex;
   flex-direction: column;
@@ -273,6 +374,22 @@ p {
   margin: 1rem auto 0 auto;
 }
 
+@media (min-width: 768px) {
+  .image-with-text .module {
+    flex-direction: row;
+    align-items: center;
+    height: 18rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .image-with-text .module .w-50-desktop.text-padding-right {
+    padding-right: 2rem;
+    order: -1;
+  }
+  .image-with-text .module .w-50-desktop.text-padding-left {
+    padding-left: 2rem;
+  }
+}
 .instagram.module-wrapper {
   margin-bottom: 0;
 }
@@ -287,7 +404,6 @@ p {
   height: 6rem;
   background: rgba(0, 0, 0, 0.7);
   color: #ffffff;
-  font-size: 0.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -296,9 +412,6 @@ p {
   pointer-events: none;
   transform: translateY(100%);
   transition: all 1.5s ease;
-}
-.instagram.module-wrapper .swiper-slide .overlay a {
-  border-bottom: 1px solid #ffffff;
 }
 .instagram.module-wrapper .swiper-slide .overlay .instagram-icons {
   display: flex;
@@ -317,6 +430,36 @@ p {
   transform: translateY(0%);
 }
 
+@media (min-width: 600px) {
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide {
+    flex: 0 0 auto;
+    width: 10rem;
+    height: 10rem;
+  }
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide .ig-img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide .ig-img:hover {
+    cursor: pointer;
+  }
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide .overlay {
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    transition: all 0.5s ease;
+    width: 10rem;
+    height: 5rem;
+  }
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide .overlay .instagram-icons {
+    padding-left: 1rem;
+  }
+  .instagram.module-wrapper .swiper-wrapper .swiper-slide:hover .overlay {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: auto;
+  }
+}
 .keyfacts .facts {
   display: flex;
   flex-direction: column;
@@ -329,4 +472,19 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .keyfacts .facts .fact {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .keyfacts .facts {
+    flex-direction: row;
+    padding: 4rem 0 0 0;
+  }
+  .keyfacts .facts .fact {
+    padding: 0;
+  }
+}

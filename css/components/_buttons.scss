@@ -1,5 +1,6 @@
-@use '../base/colors' as *;
-@use '../base/fonts' as *;
+@use "../abstracts/variables" as *;
+@use "../base/colors" as *;
+@use "../base/fonts" as *;
 
 .button {
     text-align: center;
@@ -9,6 +10,10 @@
     font-size: 0.875rem;
     margin-top: 2rem;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &.btn-primary {
         background: $black;
         color: $white;
@@ -17,5 +22,32 @@
     &.btn-secondary {
         color: $black;
         border: 1px solid $black;
+    }
+
+    &.btn-tertiary {
+        font-size: 0.625rem;
+        margin-top: 0;
+        padding: 0;
+        border-bottom: 1px solid $white;
+        transition: border-bottom 0.2s ease-out;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}
+
+@media (min-width: $slider) {
+    .button {
+        &.btn-tertiary {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: $t-portrait) {
+    .button {
+        padding: 1rem 2rem;
+        font-size: 0.75rem;
     }
 }

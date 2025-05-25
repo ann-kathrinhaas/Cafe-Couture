@@ -1,4 +1,5 @@
-@use '../base/colors' as *;
+@use "../abstracts/variables" as *;
+@use "../base/colors" as *;
 
 .cafe-details {
     .cafe-img {
@@ -9,20 +10,28 @@
         padding-top: 4rem;
     }
 
-   .details {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    align-items: center;
-    padding: 4rem 0;
-
-    .detail {
+    .details {
         display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        border: 2px solid $white;
-        width: 18.75rem;
-        padding: 0.4rem 1rem;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+        padding: 4rem 0;
+
+        .detail {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border: 1px solid $white;
+            width: 18.75rem;
+            padding: 0.4rem 1rem;
+        }
     }
-   } 
+}
+
+@media (min-width: $t-portrait) {
+    .cafe-details {
+        .cafe-img {
+            height: 70vh;
+        }
+    }
 }

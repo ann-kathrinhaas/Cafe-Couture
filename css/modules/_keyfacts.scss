@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .keyfacts {
     .facts {
         display: flex;
@@ -7,10 +9,33 @@
         padding: 4rem 4rem 0 4rem;
 
         .fact {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: $p-portrait) and (max-width: $t-portrait) {
+    .keyfacts {
+        .facts {
+            .fact {
+                padding: 0 4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $t-portrait) {
+    .keyfacts {
+        .facts {
+            flex-direction: row;
+            padding: 4rem 0 0 0;
+
+            .fact {
+                padding: 0;
+            }
         }
     }
 }

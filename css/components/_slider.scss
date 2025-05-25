@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as *;
 @use "../base/colors" as *;
 
 .swiper {
@@ -24,7 +25,7 @@
       img {
         width: 10rem;
         height: 10rem;
-        transition: transform 0.4s ease; 
+        transition: transform 0.4s ease;
       }
 
       &.swiper-slide-active {
@@ -49,6 +50,35 @@
       &.swiper-pagination-bullet-active {
         background-color: $black;
       }
+    }
+  }
+}
+
+@media (min-width: $slider) {
+  .swiper {
+    overflow: visible !important;
+
+    .swiper-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      transform: none !important;
+
+      .swiper-slide {
+        position: relative;
+        overflow: hidden;
+        flex: 0 0 auto;
+        width: auto !important;
+        transform: none !important;
+
+        &.clone {
+          display: none;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      display: none;
     }
   }
 }
