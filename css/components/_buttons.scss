@@ -17,11 +17,24 @@
     &.btn-primary {
         background: $black;
         color: $white;
+
+        &:hover {
+            &:hover {
+                background-color: $gold;
+            }
+        }
     }
 
     &.btn-secondary {
         color: $black;
         border: 1px solid $black;
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba($black, 0.15);
+        }
     }
 
     &.btn-tertiary {
@@ -53,9 +66,9 @@
 }
 
 @media (min-width: $t-landscape) {
-   .button {
+    .button {
         &.btn-tertiary {
             font-size: 0.625rem;
         }
-    } 
+    }
 }

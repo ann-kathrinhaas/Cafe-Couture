@@ -23,12 +23,23 @@ p {
 }
 
 .footer {
-    p {
+    p,
+    a {
         font-family: $font-secondary;
         font-weight: 300;
+        font-size: 0.75rem;
 
         &.subheadline {
             font-family: $font-primary;
+        }
+    }
+
+    a {
+        color: $grey;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
         }
     }
 }

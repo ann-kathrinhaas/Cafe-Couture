@@ -114,12 +114,22 @@ p {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
-.footer p {
+.footer p,
+.footer a {
   font-family: "Helvetica Light", sans-serif;
   font-weight: 300;
+  font-size: 0.75rem;
 }
-.footer p.subheadline {
+.footer p.subheadline,
+.footer a.subheadline {
   font-family: "ABChanelCorpo", sans-serif;
+}
+.footer a {
+  color: #9b9b9b;
+}
+.footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 span {
@@ -168,9 +178,18 @@ p {
   background: #000000;
   color: #ffffff;
 }
+.button.btn-primary:hover:hover {
+  background-color: #cd9932;
+}
 .button.btn-secondary {
   color: #000000;
   border: 1px solid #000000;
+}
+.button.btn-secondary:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .button.btn-tertiary {
   font-size: 0.625rem;
@@ -336,7 +355,10 @@ p {
   flex-direction: row;
   gap: 1rem;
 }
-.footer.module-wrapper .module .footer-links p:nth-of-type(1), .footer.module-wrapper .module .footer-links p:nth-of-type(2) {
+.footer.module-wrapper .module .instagram-link:hover {
+  cursor: pointer;
+}
+.footer.module-wrapper .module .footer-links a:nth-of-type(1), .footer.module-wrapper .module .footer-links a:nth-of-type(2) {
   margin-bottom: 0.5rem;
 }
 
