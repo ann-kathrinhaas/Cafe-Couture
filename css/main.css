@@ -361,12 +361,18 @@ p {
 .footer.module-wrapper .module .footer-links a:nth-of-type(1), .footer.module-wrapper .module .footer-links a:nth-of-type(2) {
   margin-bottom: 0.5rem;
 }
+.footer.module-wrapper .module .line-break {
+  display: block;
+}
 
 @media (min-width: 1024px) {
   .footer.module-wrapper .module .footer-links {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+  }
+  .footer.module-wrapper .module .line-break {
+    display: inline;
   }
 }
 .cafe-details .cafe-img {
