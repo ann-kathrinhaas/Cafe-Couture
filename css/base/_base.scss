@@ -77,6 +77,8 @@ body {
 
 @media (min-width: $t-portrait) {
     .module-wrapper {
+        margin: 10rem auto;
+
         .module {
             padding: 0 4rem;
 
@@ -103,6 +105,8 @@ body {
 
 @media (min-width: $t-landscape) {
     .module-wrapper {
+        margin: 12rem auto;
+        
         .module {
             .image-wrapper {
                 &.cafe {

@@ -71,6 +71,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .module-wrapper {
+    margin: 10rem auto;
+  }
   .module-wrapper .module {
     padding: 0 4rem;
   }
@@ -89,6 +92,9 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .module-wrapper {
+    margin: 12rem auto;
+  }
   .module-wrapper .module .image-wrapper.cafe {
     max-height: 140vh;
     min-height: 70rem;
