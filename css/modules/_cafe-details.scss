@@ -2,9 +2,17 @@
 @use "../base/colors" as *;
 
 .cafe-details {
-    .cafe-img {
-        border-bottom: 2px solid $white;
-        width: 100vw;
+    .parallax {
+        background-image: url("../../assets/images/cafe.webp");
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .white-border {
+        border-top: 2px solid $white;
     }
 
     .preheadline {
