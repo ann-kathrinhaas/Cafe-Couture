@@ -8,25 +8,6 @@
     transform: translateY(0);
   }
 }
-.fact,
-.product {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-.fact.delay-1,
-.product.delay-1 {
-  animation-delay: 0.4s;
-}
-.fact.delay-2,
-.product.delay-2 {
-  animation-delay: 0.8s;
-}
-.fact.delay-3,
-.product.delay-3 {
-  animation-delay: 1.2s;
-}
-
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -37,12 +18,6 @@
     transform: translateX(0);
   }
 }
-.slide-in-left {
-  opacity: 0;
-  animation: slideInLeft 1s ease-out forwards;
-  animation-delay: 0.6s;
-}
-
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -53,8 +28,29 @@
     transform: translateX(0);
   }
 }
-.slide-in-right {
+.fact, .product, .slide-in-left, .slide-in-right {
   opacity: 0;
+}
+
+.fact.animate, .product.animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.fact.delay-1, .product.delay-1 {
+  animation-delay: 0.6s;
+}
+.fact.delay-2, .product.delay-2 {
+  animation-delay: 1s;
+}
+.fact.delay-3, .product.delay-3 {
+  animation-delay: 1.4s;
+}
+
+.slide-in-left.animate {
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.slide-in-right.animate {
   animation: slideInRight 1s ease-out forwards;
   animation-delay: 0.6s;
 }
