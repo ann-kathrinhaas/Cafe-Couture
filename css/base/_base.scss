@@ -62,13 +62,12 @@ body {
     }
 }
 
-@media (min-width: $p-portrait) and (max-width: $t-portrait) {
+@media (min-width: $p-portrait) {
     .module-wrapper {
         .module {
             padding: 0 4rem;
 
             .image-wrapper {
-                height: 80vh;
                 margin-left: -4rem;
             }
         }

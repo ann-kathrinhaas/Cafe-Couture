@@ -118,12 +118,11 @@ body {
   width: 100vw;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
   .module-wrapper .module {
     padding: 0 4rem;
   }
   .module-wrapper .module .image-wrapper {
-    height: 80vh;
     margin-left: -4rem;
   }
 }
