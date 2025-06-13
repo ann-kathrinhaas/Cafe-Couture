@@ -2,13 +2,13 @@
 @use "../base/colors" as *;
 
 .cafe-details {
-    .parallax {
+    .cafe {
         background-image: url("../assets/images/cafe.webp");
-        height: 100vh;
-        background-attachment: fixed;
+        height: 55vh;
+        width: 100vw;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .white-border {
@@ -37,8 +37,25 @@
     }
 }
 
+@media (min-width: $t-portrait) {
+    .cafe-details {
+        .cafe {
+            height: auto;
+            aspect-ratio: 4 / 3;
+        }
+    }
+}
+
 @media (min-width: $t-landscape) {
     .cafe-details {
+        .parallax {
+            background-image: url("../assets/images/cafe.webp");
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .details {
             flex-direction: row;
             gap: 1rem;
