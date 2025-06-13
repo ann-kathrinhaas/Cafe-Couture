@@ -152,6 +152,9 @@ body {
   .module-wrapper {
     margin: 12rem auto;
   }
+  .module-wrapper .module.header-module {
+    padding-bottom: 2rem;
+  }
   .module-wrapper .module .image-wrapper.cafe {
     max-height: 140vh;
     min-height: 70rem;

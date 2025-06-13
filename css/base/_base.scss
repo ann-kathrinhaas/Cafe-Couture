@@ -108,6 +108,10 @@ body {
         margin: 12rem auto;
         
         .module {
+            &.header-module {
+                padding-bottom: 2rem;
+            }
+
             .image-wrapper {
                 &.cafe {
                     max-height: 140vh;
