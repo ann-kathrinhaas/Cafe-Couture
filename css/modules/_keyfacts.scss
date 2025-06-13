@@ -13,6 +13,11 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
+            width: calc(390px - 8rem);
+
+            .space {
+                display: none;
+            }
         }
     }
 }
@@ -21,7 +26,7 @@
     .keyfacts {
         .facts {
             .fact {
-                padding: 0 4rem;
+                // padding: 0 4rem;
             }
         }
     }
@@ -33,9 +38,31 @@
             flex-direction: row;
             padding: 4rem 0 0 0;
             gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
 
             .fact {
                 padding: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $t-landscape) {
+    .keyfacts {
+        .facts {
+            .fact {
+                h4 {
+                    height: 3rem;
+                }
+
+                .br:nth-of-type(1) {
+                    display: none;
+                }
+
+                .space {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -45,10 +72,6 @@
     .keyfacts {
         .facts {
             gap: 4rem;
-
-            .fact {
-                padding: 0 4rem;
-            }
         }
     }
 }
