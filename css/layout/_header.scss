@@ -15,7 +15,18 @@
     }
 
     &.header-img {
-        background-image: url("../assets/images/header.webp");
+        &.header-style {
+            background-image: url("../assets/images/style/header.webp");
+        }
+
+        &.header-creative {
+            background-image: url("../assets/images/creative/header.webp");
+        }
+
+        &.header-sustainable {
+            background-image: url("../assets/images/sustainable/header.webp");
+        }
+        
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

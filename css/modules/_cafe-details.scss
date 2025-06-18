@@ -3,7 +3,18 @@
 
 .cafe-details {
     .cafe {
-        background-image: url("../assets/images/cafe.webp");
+        &.cafe-style {
+            background-image: url("../assets/images/style/cafe.webp");
+        }
+
+        &.cafe-creative {
+            background-image: url("../assets/images/creative/cafe.webp");
+        }
+
+        &.cafe-sustainable {
+            background-image: url("../assets/images/sustainable/cafe.webp");
+        }
+
         height: 55vh;
         width: 100vw;
         background-size: cover;
@@ -49,7 +60,18 @@
 @media (min-width: $t-landscape) {
     .cafe-details {
         .parallax {
-            background-image: url("../assets/images/cafe.webp");
+            &.cafe-style {
+                background-image: url("../assets/images/style/cafe.webp");
+            }
+
+            &.cafe-creative {
+                background-image: url("../assets/images/style/cafe.webp");
+            }
+
+            &.cafe-sustainable {
+                background-image: url("../assets/images/sustainable/cafe.webp");
+            }
+
             height: 100vh;
             background-attachment: fixed;
             background-position: center;

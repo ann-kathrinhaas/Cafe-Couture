@@ -310,6 +310,8 @@ p {
   width: 10rem;
   height: 10rem;
   transition: transform 0.4s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .swiper .swiper-wrapper .swiper-slide.swiper-slide-active img {
   width: 12rem;
@@ -363,7 +365,6 @@ p {
   width: auto;
 }
 .module-wrapper.header-img {
-  background-image: url("../assets/images/header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -373,6 +374,15 @@ p {
   display: flex;
   align-items: flex-end;
   margin-top: 0;
+}
+.module-wrapper.header-img.header-style {
+  background-image: url("../assets/images/style/header.webp");
+}
+.module-wrapper.header-img.header-creative {
+  background-image: url("../assets/images/creative/header.webp");
+}
+.module-wrapper.header-img.header-sustainable {
+  background-image: url("../assets/images/sustainable/header.webp");
 }
 .module-wrapper.header-img p {
   margin-bottom: 2rem;
@@ -451,12 +461,20 @@ p {
   }
 }
 .cafe-details .cafe {
-  background-image: url("../assets/images/cafe.webp");
   height: 55vh;
   width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.cafe-details .cafe.cafe-style {
+  background-image: url("../assets/images/style/cafe.webp");
+}
+.cafe-details .cafe.cafe-creative {
+  background-image: url("../assets/images/creative/cafe.webp");
+}
+.cafe-details .cafe.cafe-sustainable {
+  background-image: url("../assets/images/sustainable/cafe.webp");
 }
 .cafe-details .white-border {
   border-top: 2px solid #ffffff;
@@ -488,12 +506,20 @@ p {
 }
 @media (min-width: 1024px) {
   .cafe-details .parallax {
-    background-image: url("../assets/images/cafe.webp");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .cafe-details .parallax.cafe-style {
+    background-image: url("../assets/images/style/cafe.webp");
+  }
+  .cafe-details .parallax.cafe-creative {
+    background-image: url("../assets/images/style/cafe.webp");
+  }
+  .cafe-details .parallax.cafe-sustainable {
+    background-image: url("../assets/images/sustainable/cafe.webp");
   }
   .cafe-details .details {
     flex-direction: row;
