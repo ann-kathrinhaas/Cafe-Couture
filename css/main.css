@@ -186,10 +186,6 @@ p {
   font-weight: 300;
   font-size: 0.75rem;
 }
-.footer p.subheadline,
-.footer a.subheadline {
-  font-family: "ABChanelCorpo", sans-serif;
-}
 .footer a {
   color: #9b9b9b;
 }
@@ -412,6 +408,10 @@ p {
   gap: 3rem;
   align-items: center;
   padding: 4rem 1rem;
+}
+.footer.module-wrapper .module .logo-footer {
+  height: 2.5rem;
+  width: auto;
 }
 .footer.module-wrapper .module .icon-ig {
   width: 2rem;
