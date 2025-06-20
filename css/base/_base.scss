@@ -84,6 +84,13 @@ body {
             .image-wrapper {
                 margin-left: 0;
 
+                // img {
+                //     &.full-width-on-mobile {
+                //         width: unset;
+                //         justify-self: center;
+                //     }
+                // }
+
                 &.cafe {
                     max-height: 100vh;
                     min-height: 50rem;

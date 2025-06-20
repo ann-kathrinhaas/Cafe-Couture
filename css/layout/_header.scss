@@ -8,7 +8,7 @@
 
         .module {
             .logo {
-                height: 2rem;
+                height: 1.5rem;
                 width: auto;
             }
         }
@@ -24,20 +24,21 @@
         }
 
         &.header-sustainable {
-            background-image: url("../assets/images/sustainable/header.webp");
+            background-image: url("../assets/images/conscious/header.webp");
         }
-        
+
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: auto;
-        max-height: 45vh;
-        min-height: 24rem;
+        // max-height: 45vh;
+        min-height: 30rem;
+        min-height: 70vh;
         display: flex;
         align-items: flex-end;
         margin-top: 0;
 
-        p {
+        h4 {
             margin-bottom: 2rem;
         }
     }
@@ -45,9 +46,17 @@
 
 @media (min-width: $p-portrait) {
     .module-wrapper {
+        &.logo-wrapper {
+            .module {
+                .logo {
+                    height: 2rem;
+                    width: auto;
+                }
+            }
+        }
         &.header-img {
             max-height: 50vh;
-            min-height: 26rem;
+            min-height: 40rem;
         }
     }
 }
@@ -56,7 +65,7 @@
     .module-wrapper {
         &.header-img {
             max-height: 70vh;
-            min-height: 40rem;
+            min-height: 45rem;
         }
     }
 }
@@ -65,7 +74,11 @@
     .module-wrapper {
         &.header-img {
             max-height: 75vh;
-            min-height: 42rem;
+            // min-height: 42rem;
+
+            &.header-style {
+                background-position: bottom;
+            }
         }
     }
 }

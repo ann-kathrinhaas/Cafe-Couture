@@ -213,7 +213,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 p {
@@ -225,6 +225,14 @@ p {
   margin: 0;
 }
 
+@media (min-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
 .button {
   text-align: center;
   width: -moz-fit-content;
@@ -357,7 +365,7 @@ p {
   margin: 2rem 0;
 }
 .module-wrapper.logo-wrapper .module .logo {
-  height: 2rem;
+  height: 1.5rem;
   width: auto;
 }
 .module-wrapper.header-img {
@@ -365,8 +373,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  max-height: 45vh;
-  min-height: 24rem;
+  min-height: 30rem;
+  min-height: 70vh;
   display: flex;
   align-items: flex-end;
   margin-top: 0;
@@ -378,28 +386,34 @@ p {
   background-image: url("../assets/images/creative/header.webp");
 }
 .module-wrapper.header-img.header-sustainable {
-  background-image: url("../assets/images/sustainable/header.webp");
+  background-image: url("../assets/images/conscious/header.webp");
 }
-.module-wrapper.header-img p {
+.module-wrapper.header-img h4 {
   margin-bottom: 2rem;
 }
 
 @media (min-width: 480px) {
+  .module-wrapper.logo-wrapper .module .logo {
+    height: 2rem;
+    width: auto;
+  }
   .module-wrapper.header-img {
     max-height: 50vh;
-    min-height: 26rem;
+    min-height: 40rem;
   }
 }
 @media (min-width: 1024px) {
   .module-wrapper.header-img {
     max-height: 70vh;
-    min-height: 40rem;
+    min-height: 45rem;
   }
 }
 @media (min-width: 1280px) {
   .module-wrapper.header-img {
     max-height: 75vh;
-    min-height: 42rem;
+  }
+  .module-wrapper.header-img.header-style {
+    background-position: bottom;
   }
 }
 .footer.module-wrapper .module {
@@ -468,7 +482,7 @@ p {
   background-repeat: no-repeat;
 }
 .cafe-details .cafe.cafe-style {
-  background-image: url("../assets/images/style/cafe.webp");
+  background-image: url("../assets/images/style/cafe.png");
 }
 .cafe-details .cafe.cafe-creative {
   background-image: url("../assets/images/creative/cafe.webp");
@@ -513,7 +527,7 @@ p {
     background-size: cover;
   }
   .cafe-details .parallax.cafe-style {
-    background-image: url("../assets/images/style/cafe.webp");
+    background-image: url("../assets/images/style/cafe.png");
   }
   .cafe-details .parallax.cafe-creative {
     background-image: url("../assets/images/style/cafe.webp");
