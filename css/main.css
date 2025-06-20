@@ -482,7 +482,7 @@ p {
   background-repeat: no-repeat;
 }
 .cafe-details .cafe.cafe-style {
-  background-image: url("../assets/images/style/cafe.png");
+  background-image: url("../assets/images/style/cafe.webp");
 }
 .cafe-details .cafe.cafe-creative {
   background-image: url("../assets/images/creative/cafe.webp");
@@ -527,7 +527,7 @@ p {
     background-size: cover;
   }
   .cafe-details .parallax.cafe-style {
-    background-image: url("../assets/images/style/cafe.png");
+    background-image: url("../assets/images/style/cafe.webp");
   }
   .cafe-details .parallax.cafe-creative {
     background-image: url("../assets/images/style/cafe.webp");
