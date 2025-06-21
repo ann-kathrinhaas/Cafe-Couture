@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 // Keyfacts, Kollektion
 @keyframes fadeInUp {
     from {
@@ -35,13 +37,17 @@
 }
 
 // Animations
-.fact, .product, .slide-in-left, .slide-in-right {
+.fact,
+.product,
+.slide-in-left,
+.slide-in-right {
     opacity: 0;
 }
 
-.fact, .product {
+.fact,
+.product {
     &.animate {
-       animation: fadeInUp 0.8s ease-out forwards; 
+        animation: fadeInUp 0.8s ease-out forwards;
     }
 
     &.delay-1 {
@@ -49,24 +55,45 @@
     }
 
     &.delay-2 {
-        animation-delay: 1.0s;
+        animation-delay: 1.2s;
     }
 
     &.delay-3 {
-        animation-delay: 1.4s;
+        animation-delay: 1.8s;
     }
 }
 
 .slide-in-left {
     &.animate {
-       animation: slideInLeft 1s ease-out forwards; 
-       animation-delay: 0.6s;
+        animation: slideInLeft 1s ease-out forwards;
+        animation-delay: 0.6s;
     }
 }
 
 .slide-in-right {
     &.animate {
-       animation: slideInRight 1s ease-out forwards; 
-       animation-delay: 0.6s;
+        animation: slideInRight 1s ease-out forwards;
+        animation-delay: 0.6s;
+    }
+}
+
+@media (max-width: $t-portrait) {
+    .fact,
+    .product {
+        &.animate {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        &.delay-1 {
+            animation-delay: 0.3s;
+        }
+
+        &.delay-2 {
+            animation-delay: 0.6s;
+        }
+
+        &.delay-3 {
+            animation-delay: 0.9s;
+        }
     }
 }

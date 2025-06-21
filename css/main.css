@@ -28,21 +28,28 @@
     transform: translateX(0);
   }
 }
-.fact, .product, .slide-in-left, .slide-in-right {
+.fact,
+.product,
+.slide-in-left,
+.slide-in-right {
   opacity: 0;
 }
 
-.fact.animate, .product.animate {
+.fact.animate,
+.product.animate {
   animation: fadeInUp 0.8s ease-out forwards;
 }
-.fact.delay-1, .product.delay-1 {
+.fact.delay-1,
+.product.delay-1 {
   animation-delay: 0.6s;
 }
-.fact.delay-2, .product.delay-2 {
-  animation-delay: 1s;
+.fact.delay-2,
+.product.delay-2 {
+  animation-delay: 1.2s;
 }
-.fact.delay-3, .product.delay-3 {
-  animation-delay: 1.4s;
+.fact.delay-3,
+.product.delay-3 {
+  animation-delay: 1.8s;
 }
 
 .slide-in-left.animate {
@@ -55,6 +62,24 @@
   animation-delay: 0.6s;
 }
 
+@media (max-width: 768px) {
+  .fact.animate,
+  .product.animate {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  .fact.delay-1,
+  .product.delay-1 {
+    animation-delay: 0.3s;
+  }
+  .fact.delay-2,
+  .product.delay-2 {
+    animation-delay: 0.6s;
+  }
+  .fact.delay-3,
+  .product.delay-3 {
+    animation-delay: 0.9s;
+  }
+}
 @font-face {
   font-family: "ABChanelCorpo";
   src: url("../assets/fonts/ABChanelCorpo-Light.ttf") format("truetype");
