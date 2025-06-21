@@ -487,8 +487,8 @@ p {
 .cafe-details .cafe.cafe-creative {
   background-image: url("../assets/images/creative/cafe.webp");
 }
-.cafe-details .cafe.cafe-sustainable {
-  background-image: url("../assets/images/sustainable/cafe.webp");
+.cafe-details .cafe.cafe-conscious {
+  background-image: url("../assets/images/conscious/cafe.webp");
 }
 .cafe-details .white-border {
   border-top: 2px solid #ffffff;
@@ -530,10 +530,10 @@ p {
     background-image: url("../assets/images/style/cafe.webp");
   }
   .cafe-details .parallax.cafe-creative {
-    background-image: url("../assets/images/style/cafe.webp");
+    background-image: url("../assets/images/creative/cafe.webp");
   }
   .cafe-details .parallax.cafe-sustainable {
-    background-image: url("../assets/images/sustainable/cafe.webp");
+    background-image: url("../assets/images/conscious/cafe.webp");
   }
   .cafe-details .details {
     flex-direction: row;
