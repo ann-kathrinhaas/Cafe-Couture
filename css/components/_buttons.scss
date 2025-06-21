@@ -50,6 +50,14 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 390px) {
+    .button {
+        &.btn-tertiary {
+            font-size: 0.5rem;
+        }
+    }
+}
+
 @media (min-width: $slider) {
     .button {
         &.btn-tertiary {
